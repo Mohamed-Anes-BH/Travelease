@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0%;
+
+}
+.containner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap:20px;
+}
+.home-content {
+    flex-direction: row; 
+}
+.photo-tr{
+    
+    
+    width :10%;
+    position :absolute;
+    margin-left:55.3%;
+    
+}
+.photo1{
+    position: absolute;
+    z-index: 0;
+}
+.photo2{
+    
+    z-index: 10;
+    
+    
+    
+}

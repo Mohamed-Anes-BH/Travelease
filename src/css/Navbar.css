@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f0e8e8;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ece4e4;
+    padding: 10px 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+  }
+  .logo span{
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #d3135a;
+  }
+  .logo a:hover {
+    
+    text-decoration: none;
+  }
+  
+  .nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .nav-links a:hover {
+    color: #d3135a;
+    transform: scale(1.1) 0.2s ;
+    text-decoration: none;
+  }
+  
+  .right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .bell span {
+    font-size: 1.3rem;
+    color: #d3135a;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    background: #f2eeee;
+    border: 1px solid #bcbcbc;
+    border-radius: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .profile-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 8px;
+  }
+  
+  .username {
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
