@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import "../css/forgetPassword.css"; // Importing the CSS file for styling
 import NavBar from "./NavBar";
@@ -34,6 +35,7 @@ function ForgetPassword() {
                     <p>
                         Maybe late? <a href="/">Back to home page</a>
                     </p>
+                    
                 </form>
             </div>
         </>
