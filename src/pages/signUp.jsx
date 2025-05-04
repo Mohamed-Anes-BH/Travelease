@@ -1,8 +1,6 @@
 import React from "react";
 import "../css/signUp.css"; // Importing the CSS file for styling
-import { FaFacebook } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
-import { IoMdPerson } from "react-icons/io";
 import { useState } from "react";
 
 function SignUp() {
@@ -11,17 +9,14 @@ function SignUp() {
      const [name1, setName1] = useState('');
      const [name2, setName2] = useState('');
  
- 
    return (
      <div className="loginContainer">
          <h1 id="aaa">Welcome to Travelease</h1>
        <form id='loginForm'>
        <h1>Create account </h1>
        <div className="firstLastName">
-
-       
           <div className="inputGroup">
-           <label htmlFor="username">First name:</label>
+           <label htmlFor="username" style={{color:"black"}}>First name:</label>
            <input type="text" id="firstName" name="firstName" value={name1} onChange={(e)=>setName1(e.target.value)}
             required />
           </div>
@@ -48,26 +43,10 @@ function SignUp() {
          <p id='or'> or </p>
            <div className="socialLogin">
                  <button className='socialButton'>
-                   <FaFacebook /> continue with facebook
+                 <BiLogoGmail /> continue with gmail
                  </button>
-                 <button className='socialButton'>
-                   {" "}
-                   <BiLogoGmail />  {"    "}continue with   gmail{" "}
-                 </button>
-                 
                </div>
-               <button id='guest'>
-                   {" "}
-                   <IoMdPerson /> continue as Guest{" "}
-                 </button>
- 
- 
- 
-         
-       
-       
        </form>
- 
      </div>
   );
 }

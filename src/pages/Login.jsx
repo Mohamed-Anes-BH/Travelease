@@ -1,10 +1,7 @@
 import '../css/Login.css';
-import { FaFacebook } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
-import { IoMdPerson } from "react-icons/io";
 import { useState } from "react"
 import { Link } from 'react-router-dom';
-;
 
 function Login() {
     const [email, setEmail] = useState('');
@@ -16,19 +13,9 @@ function Login() {
         // Add logic to authenticate the user with the backend
     };
 
-    const handleFacebookLogin = () => {
-        console.log("Facebook login clicked");
-        // Add Facebook login logic here
-    };
-
     const handleGmailLogin = () => {
         console.log("Gmail login clicked");
         // Add Gmail login logic here
-    };
-
-    const handleGuestLogin = () => {
-        console.log("Guest login clicked");
-        // Add guest login logic here
     };
 
     return (  
@@ -69,16 +56,10 @@ function Login() {
                 <hr />
                 <p id="or">or</p>
                 <div className="socialLogin">
-                    <button className="socialButton" onClick={handleFacebookLogin}>
-                        <FaFacebook /> Continue with Facebook
-                    </button>
                     <button className="socialButton" onClick={handleGmailLogin}>
                         <BiLogoGmail /> Continue with Gmail
                     </button>
                 </div>
-                <button id="guest" onClick={handleGuestLogin}>
-                    <IoMdPerson /> Continue as Guest
-                </button>
             </form>
         </div>
     );

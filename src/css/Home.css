@@ -1,36 +1,403 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-    margin: 0;
-    padding: 0%;
 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    
 }
-.containner{
+
+
+.contaa {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #EAE2E2;
+    overflow-x: hidden;
+}
+
+.firir {
+    position: relative;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#bibi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 840px;
+    z-index: 0;
+}
+
+.paa {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap:20px;
+    text-align: center;
+    height: auto;
+    min-height: 35vh;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-size: 1.5rem;
+    left: 2%;
+    padding: 2rem 0;
+    h1{
+        font-size: 2.5rem;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 8px;
+        color: #000;
+    }
+    h3{
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 5px;
+        color: rgb(218, 218, 218);
+    }
+    p{
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: center;
+        color:  rgb(218, 218, 218);
+        
+    }
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.home-content {
-    flex-direction: row; 
+
+#pho {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 16%;
+    top: -45px;
+    height: auto;
+    position: relative;
+    top: 30;
+    animation: taa 2s ease-in-out infinite alternate;
+    z-index: 1;
+    left: 2%;
+    
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: block;
 }
-.photo-tr{
-    
-    
-    width :10%;
-    position :absolute;
-    margin-left:55.3%;
-    
+@keyframes taa {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
 }
-.photo1{
+
+.seco {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    gap: 25px;
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+
+.seco video {
+    width: 100%;
+    height: 100%;
+}
+
+.hoo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    background-color: transparent;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.abouu {
+    margin-top: 20%;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    background-color: #EAE2E2;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+#hh {
+    position: relative;
+    top: 0;
+    left: 5.5%;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 40px;
+    font-size: larger;
+    font-weight: 800;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.wide_selection,
+.secure_payements,
+.easy_booking,
+.best_prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+    position: relative;
+    padding: 2.5rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s ease-out;
+}
+
+.wide_selection.animate,
+.secure_payements.animate,
+.easy_booking.animate,
+.best_prices.animate {
+    opacity: 1;
+    transform: translateX(0);
+    overflow-x: hidden;
+}
+
+.secure_payements,
+.best_prices {
+    transform: translateX(100%);
+    overflow-x: hidden;
+}
+
+.lee,
+.rii {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+    padding: 0 2.5rem;
+    text-align: center;
+}
+
+.lee h1,
+.rii h1 {
+    font-size: 2.125rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 10px;
+    margin: 0 2rem;
+    width: 100%;
+}
+
+.lee p,
+.rii p {
+    top: 20px;
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0 2rem;
+    width: 100%;
+}
+
+.lee img,
+.rii img {
+    max-width: 280px;
+}
+
+.lee {
+    text-align: right;
+}
+
+.wide_selection {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.lee {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.easy_booking {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.secure_payements .rii {
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.abouu h1 {
+    background-color: crimson;
+    padding: 20px;
+    padding-block: 5px;
+    border-radius: 15px;
+    color: aliceblue;
+    font-size: 1rem;
+    padding-inline: 5px;
+}
+
+.laaa {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    border-top: 1px solid #474747;
+    background-color: #D9D9D9;
+}
+
+.gauu {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.gauu h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.gauu p {
+    font-size: 16px;
+    color: #666;
+    margin-left: 20px;
+    margin-top: 0;
+}
+
+.droii {
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+}
+
+.droii a:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    cursor: no-drop;
+    margin-bottom: 15px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.droii a:not(:first-child) {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 8px;
+    text-decoration: none;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.droii a:last-child {
+    margin-bottom: 50px;
+}
+
+.droii a:not(:first-child):hover {
+    transform: scale(1.1);
+}
+
+.wide_selection::before,
+.secure_payements::before,
+.easy_booking::before,
+.best_prices::before {
+    content: '';
     position: absolute;
-    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 80%;
+    background-color: crimson;
+    z-index: 1;
+    overflow-x: hidden;
 }
-.photo2{
-    
-    z-index: 10;
-    
-    
-    
+
+.wide_selection::after,
+.secure_payements::after,
+.easy_booking::after,
+.best_prices::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    background-color: crimson;
+    border-radius: 50%;
+    z-index: 2;
+    overflow-x: hidden;
+}
+
+.raa {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 2s ease-out;
+}
+
+.raa.animate {
+    opacity: 1;
+    transform: translateX(0);
 }
