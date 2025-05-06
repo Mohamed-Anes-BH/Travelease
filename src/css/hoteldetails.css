@@ -2,16 +2,11 @@
     overflow-x: hidden;
 }
 .titi {
-margin-left: 25%;
-position: absolute;
-margin-top: 35%;
-overflow-x: hidden;
 
 }
 
 .zekzek {
  margin-left: 5%;
- overflow-x: hidden;
 }
 
 .trtr {
@@ -19,6 +14,8 @@ overflow-x: hidden;
 }
 .krkr{
     margin-left: -30%;
+    margin-bottom: 5%;
+    margin-top: 2%;
   
 }
 .koko {
@@ -36,19 +33,20 @@ overflow-x: hidden;
 }
 
 .laaa {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    margin: 0 auto;
-    overflow-x: hidden;
-    border-top: 1px solid #474747;
-    background-color: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  border-top: 1px solid #474747;
+  background-color: #D9D9D9;
+  padding: 2rem 1rem;
 }
 
-.gauu {
-    flex: 1;
-    padding-right: 40px;
+.gauu, .droii {
+  width: 100%;
+  text-align: center;
 }
 
 .gauu h1 {
@@ -109,4 +107,98 @@ overflow-x: hidden;
 }
 .lili {
     margin-left: 5%;
+}
+.liro {
+    
+    margin-bottom: 7%;
+}
+
+.hotel-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .hotel-image {
+    height: 220px;
+    border-radius: 0.75rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hotel-image {
+    height: 160px;
+    border-radius: 0.5rem;
+  }
+}
+
+@media (min-width: 1401px) {
+  .titi {
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 50%;
+    left: 0;
+    top: 0;
+  }
+}
+
+@media (max-width: 1400px) {
+  .titi {
+    position: relative;
+    left: 0;
+    width:  80%;
+    height: 50%;
+    justify-content: start;
+    align-items: start;
+    margin-left: -10%;
+    top: 0;
+  }
+}
+@media (max-width: 800px) {
+    .titi {
+        margin-left: 0%;
+    }
+}
+@media (min-width: 1401px) {
+    .krkr {
+        margin-left: -30%;
+    }
+    .trtr {
+        margin-left: -38%;
+    }
+} 
+  
+  @media (max-width: 1400px) {
+     .krkr{
+     margin-left: 0%;
+    }
+    .trtr {
+       margin-left: -22%;
+  }
+}
+@media (max-width: 800px) {
+.trtr{
+    margin-left: -7%;
+}
+}
+@media (min-width: 768px) {
+  .laaa {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0;
+    padding: 2rem 4rem;
+  }
+  .gauu, .droii {
+    width: auto;
+    text-align: left;
+  }
+  .droii {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }

@@ -102,6 +102,14 @@ const HotelDetails = () => {
     </div>
   );
 
+  const mainImage = "https://placehold.co/600x400";
+  const sideImages = [
+    "https://placehold.co/300x200",
+    "https://placehold.co/300x200",
+    "https://placehold.co/300x200",
+    "https://placehold.co/300x200"
+  ];
+
   return (
     <div className="hotel-details-container">
       <nav className="navbar">
@@ -120,13 +128,28 @@ const HotelDetails = () => {
       </nav>
 
       <main className="main-content">
-        <div className="image-gallery">
-          <div className="main-image"></div>
-          <div className="side-images">
-            <div className="side-image"></div>
-            <div className="side-image"></div>
-            <div className="side-image"></div>
-            <div className="side-image"></div>
+        <div className="image-gallery w-full">
+          {/* Responsive image gallery */}
+          <div className="flex flex-col lg:flex-row gap-4 w-full piti">
+            {/* Main image */}
+            <div className="main-image w-full h-64 lg:w-2/3 lg:h-[480px] mb-4 lg:mb-0 min-w-[300px]">
+              <img
+                src={mainImage}
+                alt="Main"
+                className="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+            {/* Side images */}
+            <div className="grid grid-cols-2 grid-rows-2 gap-4 w-full h-64 lg:w-1/3 lg:h-[480px] lg:grid-cols-2 lg:grid-rows-2">
+              {sideImages.map((src, idx) => (
+                <img
+                  key={idx}
+                  src={src}
+                  alt={`Side ${idx + 1}`}
+                  className="w-full h-full object-cover rounded-2xl"
+                />
+              ))}
+            </div>
           </div>
         </div>
 

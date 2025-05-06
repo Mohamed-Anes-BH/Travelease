@@ -103,9 +103,7 @@ export default function HotelDetails() {
           </div>
 
           {/* Reservation Card - now under images and sticky */}
-          <div className="w-full max-w-md mx-auto sticky top-8 z-10 mb-8 titi">
-            <ReservationCard pricePerNight={150} />
-          </div>
+         
 
           {/* Accommodation Name & Host */}
           <h1 className="text-4xl font-extrabold mb-4 lili">The hotel name</h1>
@@ -151,6 +149,9 @@ export default function HotelDetails() {
               ))}
             </ul>
           </div>
+          <div className="w-full max-w-md mx-auto sticky top-8 z-10 mb-8 titi">
+            <ReservationCard pricePerNight={150} />
+          </div>
 
           {/* Features/Offers */}
           <div className="mb-8 w-full border-none lili ">
@@ -168,7 +169,7 @@ export default function HotelDetails() {
           </div>
 
           {/* Ratings Section */}
-          <div className="mb-12 w-full">
+          <div className="mb-12 w-full liro">
             <Rating
               ratings={{
                 overall: 4.2,
@@ -182,7 +183,7 @@ export default function HotelDetails() {
           </div>
 
           {/* Comments/Reviews */}
-          <div className="mb-12 w-full">
+          <div className="mb-12 w-full ">
             <Comments
               reviews={reviews}
               showAll={showAllReviews}
