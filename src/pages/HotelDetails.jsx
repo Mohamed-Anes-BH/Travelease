@@ -7,6 +7,7 @@ import RatingCars from "../components/RatingCars";
 import Comments from "../components/Comments";
 import { FaCoffee, FaMapMarkedAlt, FaUmbrellaBeach } from "react-icons/fa";
 import "../css/hoteldetails.css";
+import NavbarProf from "../components/NavbarProf";
 
 // Dummy data for demonstration
 const host = {
@@ -62,7 +63,7 @@ export default function HotelDetails() {
   return (
     <div className="bg-[#f3eceb] min-h-screen font-sans px-[50px] py-[50px] ">
       {/* Header */}
-      <NavBar />
+      <NavbarProf />
       {/* Main Content */}
       <br />
       <br />

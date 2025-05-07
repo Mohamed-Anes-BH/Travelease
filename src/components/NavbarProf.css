@@ -172,13 +172,14 @@ body {
   border-radius: 18px;
   z-index: 20;
   padding: 12px 0;
-  opacity: 0;
-  transform: translateY(-10px);
-  pointer-events: none;
-  transition: opacity 0.3s, transform 0.3s;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  transform: translateY(0) !important;
+  display: block !important;
   overflow-y: auto;
   max-height: 300px;
   scrollbar-width: none; /* Firefox */
+  top: 80px; /* Position below the navbar */
 }
 
 .profile-dropdown.fade-in {
@@ -317,6 +318,12 @@ body {
   }
   .mobile-menu-list .notif-badge {
     margin-left: 8px;
+  }
+  .profile-dropdown {
+    display: block !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transform: translateY(0) !important;
   }
 }
 

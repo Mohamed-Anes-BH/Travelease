@@ -15,6 +15,7 @@ const NavbarProf = () => {
   const profileRef = useRef();
   const notifRef = useRef();
   const mobileMenuRef = useRef();
+  const [profilePhoto, setProfilePhoto] = useState(null);
 
   // Prevent all scroll when mobile menu is open
   useEffect(() => {
@@ -85,7 +86,11 @@ const NavbarProf = () => {
             setShowMobileMenu(false);
           }}>
             <span className="profile-name">User name</span>
-            <FaUserCircle className="profile-icon" />
+            {profilePhoto ? (
+              <img src={profilePhoto} alt="Profile" className="profile-icon" style={{ width: '2rem', height: '2rem', borderRadius: '50%' }} />
+            ) : (
+              <FaUserCircle className="profile-icon" />
+            )}
           </button>
           {showProfile && (
             <div className="profile-dropdown fade-in">

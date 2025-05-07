@@ -566,7 +566,7 @@
   .easy_booking,
   .best_prices {
     padding: 1rem;
-  }
+}
 
   .lee h1,
   .rii h1 {
@@ -716,7 +716,7 @@
     #pho {
         width: 10%;
         top: -3%;
-    }
+}
 }
 @media (max-width: 1600px) {
     .firir {
