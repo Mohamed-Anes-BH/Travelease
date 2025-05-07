@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import NavBar from "./NavBar";
 import Calendar from "../components/Calendar";
-import Amenities from "../components/Amenities";
+import AmenitiesCars from "../components/AmenitiesCars";
 import ReservationCard from "../components/ReservationCard";
 import RatingCars from "../components/RatingCars";
 import Comments from "../components/Comments";
-import { FaCoffee, FaMapMarkedAlt, FaUmbrellaBeach } from "react-icons/fa";
+import { FaTachometerAlt, FaCarBattery, FaGasPump } from "react-icons/fa";
 import "../css/hoteldetails.css";
 
 // Dummy data for demonstration
@@ -17,9 +17,9 @@ const host = {
   avatar: "https://placehold.co/40x40",
 };
 const experiences = [
-  { icon: <FaCoffee className="text-pink-700" />, text: "Free breakfast" },
-  { icon: <FaMapMarkedAlt className="text-pink-700" />, text: "Guided city tour" },
-  { icon: <FaUmbrellaBeach className="text-pink-700" />, text: "Private beach access" },
+  { icon: <FaTachometerAlt className="text-black" />, text: "Top Speed: 250 km/h" },
+  { icon: <FaCarBattery className="text-black" />, text: "Electric Range: 400 km" },
+  { icon: <FaGasPump className="text-black" />, text: "Fuel Efficiency: 5.2L/100km" },
 ];
 const features = [
   { icon: "🌅", label: "Beach view" },
@@ -55,7 +55,7 @@ const calendar = [
   Array(31).fill(false).map((v, i) => (i % 2 === 0 ? true : false)),
 ];
 
-export default function HotelDetails() {
+export default function CarsDetails() {
   const [showAllEquip, setShowAllEquip] = useState(false);
   const [showAllReviews, setShowAllReviews] = useState(false);
 
@@ -107,13 +107,13 @@ export default function HotelDetails() {
          
 
           {/* Accommodation Name & Host */}
-          <h1 className="text-4xl font-extrabold mb-4 lili">The hotel name</h1>
+          <h1 className="text-4xl font-extrabold mb-4 lili">The car's model</h1>
           <div className="flex items-center gap-3 text-lg text-gray-600 mb-6 lili">
             <span>⭐ 4.2</span>
             <span>·</span>
             <span>Review</span>
             <span>·</span>
-            <span>Number of rev</span>
+            <span>Number of reviews</span>
           </div>
           <div className="flex items-center gap-6 mb-8 justify-start left-5% lili">
             <img
@@ -157,7 +157,7 @@ export default function HotelDetails() {
           {/* Features/Offers */}
           <div className="mb-8 w-full border-none lili ">
             <div className=" trtr rounded-2xl flex flex-col gap-3 w-full max-w-md p-[30px] border-none">
-              <Amenities />
+              <AmenitiesCars />
             </div>
           </div>
 

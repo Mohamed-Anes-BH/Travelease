@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import Rating from '../components/Rating';
+import React from 'react';
+import RatingCars from '../components/RatingCars';
 
 const RatingDemo = () => {
-    const [ratings] = useState({
-        overall: 4.2,
-        cleanliness: 4.2,
-        'check in': 4.2,
-        food: 4.2,
-        location: 4.2,
-        value: 4.2
-    });
+    const ratings = {
+        overall: 4.5,
+        performance: 4.8,
+        fuel: 4.2,
+        maintenance: 4.0,
+        safety: 4.7,
+        comfort: 4.3
+    };
 
     return (
         <div style={{ 
@@ -18,7 +18,7 @@ const RatingDemo = () => {
             alignItems: 'center', 
             backgroundColor: '#f3f4f6' 
         }}>
-            <Rating ratings={ratings} />
+            <RatingCars ratings={ratings} />
         </div>
     );
 };

@@ -202,3 +202,24 @@
     align-items: flex-end;
   }
 }
+
+@media (max-width: 1400px) {
+  .mb-12.grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    height: auto;
+    gap: 10px;
+  }
+
+  .mb-12.grid img:first-child {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    height: 300px;
+    width: 100%;
+  }
+
+  .mb-12.grid img:not(:first-child) {
+    height: 200px;
+    width: 100%;
+  }
+}

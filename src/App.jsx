@@ -13,6 +13,9 @@ import RatingDemo from './pages/RatingDemo';
 import ReservationCard from './components/ReservationCard';
 import Amenities from './components/Amenities';
 import LocationCard from './components/LocationCard';
+import CarsDetails from './pages/CarsDetails';
+import RatingCars from './components/RatingCars';
+import NavbarProf from './components/NavbarProf';
 
 function App() {
     
@@ -50,10 +53,19 @@ function App() {
         }
     };
 
+    const ratings = {
+        overall: 4.5,
+        performance: 4.8,
+        fuel: 4.2,
+        maintenance: 4.0,
+        safety: 4.7,
+        comfort: 4.3
+    };
+
     return (
         <Routes>
-            <Route path="/" element={<HotelDetails />} />
-            
+            <Route path="/" element={<NavbarProf/>} />
+            <Route path="/cars/:id" element={<CarsDetails />} />
             
             <Route path="/hotel/:id" element={<HotelDetails />} />
             <Route path="/calendar" element={<Calendar />} />
