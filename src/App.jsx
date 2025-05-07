@@ -16,7 +16,7 @@ import LocationCard from './components/LocationCard';
 import CarsDetails from './pages/CarsDetails';
 import RatingCars from './components/RatingCars';
 import NavbarProf from './components/NavbarProf';
-
+import PropertyTypes from './pages/PropertyTypes';
 function App() {
     
     const sampleLocationData = {
@@ -64,7 +64,7 @@ function App() {
 
     return (
         <Routes>
-            <Route path="/" element={<HotelDetails/>} />
+            <Route path="/" element={<PropertyTypes/>} />
             <Route path="/cars/:id" element={<CarsDetails />} />
             
             <Route path="/hotel/:id" element={<HotelDetails />} />
