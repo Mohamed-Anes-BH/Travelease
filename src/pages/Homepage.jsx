@@ -7,8 +7,9 @@ import tania from "../assets/image/tania.png";
 import thaltha from "../assets/image/thaltha.png";
 import rab3a from "../assets/image/rab3a.png";
 import NavBar from "./NavBar";
-import vid from "../assets/lala.webm";
+import vid from "../assets/back.webm";
 import HotelCardRow from "../components/home_items/HotelCard";
+
 
 function Homepage() {
     useEffect(() => {
@@ -35,7 +36,7 @@ function Homepage() {
             <div className="contaa">
             <NavBar />
             <div className="firir">
-                <video src=""></video>
+                
                 <img src={Back} alt="photo" id="bibi" />
                 <div className="paa">
                         <h1>Explore TravelEase For Your Stay</h1>
