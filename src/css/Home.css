@@ -27,7 +27,7 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+   
 }
 
 #bibi {
@@ -51,7 +51,7 @@
     min-height: 35vh;
     background-color: transparent;
     position: relative;
-    overflow: hidden;
+    
     z-index: 1;
     font-size: 1.5rem;
     left: 2%;
@@ -132,7 +132,7 @@
     padding: 4rem 2rem;
     background-color: transparent;
     text-align: center;
-    overflow-x: hidden;
+    
     gap: 2rem;
 }
 
@@ -145,7 +145,7 @@
     padding: 4rem 2rem;
     background-color: #EAE2E2;
     text-align: center;
-    overflow-x: hidden;
+   
 }
 
 #hh {
@@ -206,13 +206,12 @@
 .best_prices.animate {
     opacity: 1;
     transform: translateX(0);
-    overflow-x: hidden;
 }
 
 .secure_payements,
 .best_prices {
     transform: translateX(100%);
-    overflow-x: hidden;
+
 }
 
 .lee,
@@ -298,7 +297,7 @@
     align-items: flex-start;
     width: 100%;
     margin: 0 auto;
-    overflow-x: hidden;
+   
     border-top: 1px solid #474747;
     background-color: #D9D9D9;
     padding-bottom: 4%;
@@ -373,7 +372,7 @@
     height: 80%;
     background-color: crimson;
     z-index: 1;
-    overflow-x: hidden;
+  
 }
 
 .wide_selection::after,
@@ -390,7 +389,7 @@
     background-color: crimson;
     border-radius: 50%;
     z-index: 2;
-    overflow-x: hidden;
+ 
 }
 
 .raa {
@@ -606,13 +605,13 @@
   .best_prices.animate {
       opacity: 1;
       transform: translateX(0);
-      overflow-x: hidden;
+   
   }
   
   .secure_payements,
   .best_prices {
       transform: translateX(100%);
-      overflow-x: hidden;
+      
   }
   
   .lee,
@@ -649,7 +648,7 @@
   
   .lee img,
   .rii img {
-      max-width: 120px;
+      max-width: 100px;
   }
   
   .lee {
@@ -694,9 +693,12 @@
   }
   .seco{
   margin-top: 0%;
+ 
   }
   .hoo{
     width: 100%;
+
+    padding: 1rem;
   }
   
 }
