@@ -64,7 +64,7 @@ function App() {
 
     return (
         <Routes>
-            <Route path="/" element={<PropertyTypes/>} />
+            <Route path="/" element={<HotelDetails/>} />
             <Route path="/cars/:id" element={<CarsDetails />} />
             
             <Route path="/hotel/:id" element={<HotelDetails />} />
